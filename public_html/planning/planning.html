@@ -1,0 +1,192 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING
+	File Name:			planning.html
+=============================================================-->
+
+<!-- PAGE STYLES -->
+<link href="../planning/css/main.css" rel="stylesheet"/>
+
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript" src="../planning/js/role_access.js"></script>
+<script type="text/javascript" src="../planning/js/load_dropdowns.js"></script>
+<script type="text/javascript" src="../planning/js/event_handlers.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/set_up_plan_config.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/generate_plan_config_html.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/generate_asset_config_html.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/submit_plan_config.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/submit_asset_config.js"></script>
+<script type="text/javascript" src="../planning/js/plan_config_js/submit_new_step.js"></script>
+
+<div id="content_container">
+	<div id="main_loading_screen"><div class="lang-common loading"></div></div>
+	<div id="top_popup_wrapper" style="display: none; position: fixed; z-index: 18000; left: 0px; height: 100%; width: 100%; opacity: 0; background: rgba(0, 0, 0, 0.5);"></div>
+	<div id="popup_wrapper" style="display: none; position: fixed; z-index: 1800; left: 0px; height: 100%; width: 100%; opacity: 0; background: rgba(0, 0, 0, 0.5);"></div>
+	
+	<!--<div id="document_popup_container" style="display: none; opacity: 0.0">
+		<div id="document_name_container">
+			<div id="document_name_header">Escriba un Nombre de Referencia de Incidente<div id="doc_cancel_btn">X</div></div>
+			<table>
+				<tr>
+					<td><input id="document_name_input" type="text" placeholder="Reference Name:"></td>
+				</tr>
+			</table>
+			<button id="save_doc_btn">Guardar Incidente</button>
+		</div>
+	</div>-->
+	
+	<div class="configPopupContainer" id="plan_config_popup_container" style="display: none; opacity: 0.0; position: fixed; z-index: 4000">
+		<div class="configHeader" id="plan_config_header"><span class="lang-planning header"></span><div class="configCancelButton" id="plan_config_cancel_btn">X</div></div>
+		<div class="configSubHeader" id="plan_config_sub_header">
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning location"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" id="plan_config_location" disabled>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-datetime weekof"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" id="plan_config_week_of" disabled>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning process"></label>
+					</td>
+					<td class="inputTD">
+						<select type="text" id="process_select"></select>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning method"></label>
+					</td>
+					<td class="inputTD">
+						<select type="text" id="method_select"></select>
+					</td>
+				</tr>
+			</table>
+			<button class="configButtonSmall lang-planning addStep" id="config_add_step_button"></button>
+		</div>
+		<div class="configMainContainer" id="plan_config_step_container"></div>
+		<button class="configButton lang-planning generatePlan" id="generate_plan_config_btn"></button>
+	</div>
+	
+	<div class="configPopupContainer" id="asset_config_popup_container" style="display: none; opacity: 0.0; position: fixed; z-index: 4000">
+		<div class="configHeader" id="asset_config_header"><span class="lang-planning configureSteps"></span><div class="configCancelButton" id="asset_config_cancel_btn">X</div></div>
+		<div class="configSubHeader" id="asset_config_sub_header">
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning location"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" id="asset_config_location" disabled>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable" style="display: none">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning startDate"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" class="planConfigDate" id="asset_config_begin_date" disabled>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning method"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" id="asset_config_method" disabled>
+					</td>
+				</tr>
+			</table>
+			<table class="parentTable" style="display: none">
+				<tr>
+					<td class="labelTD">
+						<label class="lang-planning endDate"></label>
+					</td>
+					<td class="inputTD">
+						<input type="text" class="planConfigDate" id="asset_config_end_date" disabled>
+					</td>
+				</tr>
+			</table>
+			<div class="configDescription" id="asset_config_description"></div>
+		</div>
+		<div class="configMainContainer" id="asset_config_step_container"></div>
+		<button class="configButton lang-common acceptChanges" id="generate_asset_config_btn"></button>
+	</div>
+	
+	<div class="sectionContainer" id="main_container">
+		<div class="sectionBorder">
+			<div class="sectionHeader lang-planning planningSystem" id="main_header"></div>
+			<div class="sectionSubHeader" id="main_sub_header">
+			
+				<div id="plan_gantt_toggle" class="lang-planning planning"></div>
+				<div id="plan_review_toggle" class="lang-planning review"><div id="review_badges" class="tooltip" title="" style="display:none"></div></div>
+				<div id="plan_calendar_toggle" class="lang-planning checklists"></div>
+				<div id="lineup_toggle" class="lang-planning lineup"></div>
+				<div id="calendar_component_container" style="display: none; height: 0px;">
+					<div id="calendar_component_cancel">X</div>
+					<table>
+						<tr>
+							<td style="width: 35%">
+								<label id="calendar_location_label" class="lang-planning location"></label>
+							</td>
+							<td style="width: 65%">
+								<select id="calendar_location_select"></select>
+							</td>
+						</tr>
+					</table>
+				</div>				
+				
+				<div id="plan_component_button" class="lang-planning addPlan"></div>
+				<div id="plan_component_container" style="display: none; height: 0px;">
+					<div id="plan_component_cancel">X</div>
+					<table>
+						<tr>
+							<td style="width: 35%">
+								<label id="location_label" class="lang-planning location"></label>
+							</td>
+							<td style="width: 65%">
+								<select id="location_select"></select>
+							</td>
+						</tr>
+					</table>
+				</div>			
+
+				<select id="plan_week_selector"></select>
+				
+			</div>
+			<hr>
+			<div class="sectionForm" id="main_form"></div>
+			<hr>
+			<div class="sectionSubFooter" id="main_sub_footer">
+				<div class="mainNavigationBox">
+					<span id="plan_status_label"></span><span id="plan_status_indicator"></span>
+					<div class="buttonInactive btnBlue lang-common submit " id="submit_rquest_btn"></div>
+					<div class="buttonInactive btnGreen lang-planning addLineup" id="add_lineup_btn" style="display:none"></div>
+					<div class="buttonInactive btnBlue lang-planning generateLineup" id="submit_lineup_btn" style="display:none"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

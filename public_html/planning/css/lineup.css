@@ -1,0 +1,172 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING/CSS
+	File Name:			review.css
+=============================================================*/
+
+/*========================================
+			MAIN CONTENT - STYLES
+========================================*/
+
+#content_container #lineup_config_container {
+	height: 100%;
+	overflow-y: auto;
+	padding: 8px 6px;
+}
+
+#content_container #lineup_config_container .eachLineupConfigContainer {
+	display: block;
+	padding: 2px;
+}
+
+#content_container #lineup_config_container .lineupConfigHeader {
+	display: inline-block;
+	background: #2f5a89;
+	border: 1px solid #183e67;
+	border-width: 1px 1px 3px;
+	border-radius: 4px;
+	color: #ededed;
+	vertical-align: top;
+	margin-right: 4px;
+	padding: 4px;
+	position: relative;
+}
+
+#content_container #lineup_config_container select {
+	height: 26px;
+	font-size: 16px;
+	padding: 2px;
+	width: 220px;
+}
+
+#content_container #lineup_config_container select.longer {
+	width: 300px;
+}
+
+#content_container #lineup_config_container .lineupHeaderTable {
+	display:block;
+}
+
+#content_container #lineup_config_container .tableLabel {
+	text-align: right;
+}
+
+#content_container #lineup_config_container .lineupConfigMainHeader {
+	text-align: center; 
+    background: #F0EFEA;
+    border-bottom: 2px solid #d1d1d1;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.7);
+    padding: 4px 8px;
+	height: 26px;
+}
+
+#content_container #lineup_config_container .lineupConfigBodyHeader {
+	text-align: center; 
+    background: #2f5a89;
+    border-bottom: 2px solid #183e67;
+    border-radius: 4px;
+    color: #ededed;
+    padding: 4px 8px;
+	height: 26px;	
+}
+
+#content_container #lineup_config_container .lineupStepContainer {
+	position: relative;
+	display: inline-block;
+	background: #bdbdbd;
+    border: 1px solid #717171;
+	border-width: 1px 1px 3px;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 0px 4px;
+}
+
+#content_container #lineup_config_container .lineupStepTable {
+	display: block;
+}
+
+#content_container #lineup_config_container .lineupRemovebtn {
+	border-radius: 2px;
+	width: 17px;
+	height: 17px;
+	font-size: 14px;
+	background: #BE5050;
+	color: #fff;
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	line-height: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#content_container #lineup_config_container .lineupRemovebtn:hover {
+	background: #DE7070;
+}
+
+#content_container #lineup_config_container .lineupStepTable td {
+	text-align: right;
+	padding: 4px;
+}
+
+#content_container #lineup_config_container .tdDescription {
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+}
+
+#content_container #lineup_config_container .lineupHeaderTable td {
+	padding: 4px;
+}
+
+#content_container #lineup_config_container .lineupButtonContainer {
+	display: block;
+}
+
+#content_container #lineup_config_container .lineupAddStepBtn {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #50be50;
+	border-radius: 4px;
+	border: 1px solid #227622;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	padding: 2px 12px;
+	height: 28px;
+	width: 200px;	
+	float: right;
+	margin-right: 4px;
+}
+
+#content_container #lineup_config_container .lineupAddStepBtn:hover {
+	background: #70de70;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

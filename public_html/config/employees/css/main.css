@@ -1,0 +1,681 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/CONFIG/USERS/CSS
+	File Name:			main.css
+=============================================================*/
+
+/*==================================================
+					GENERAL STYLES
+==================================================*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #ddd;
+}
+
+a:hover {
+	color: #fff;
+}
+
+thead td {
+	text-align: center;
+}
+
+h1, h2 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+html, body, #wrapper {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	background: #e5e5e5;
+	overflow-x: hidden;
+}
+
+#shader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+	background: black;
+	opacity: 0;
+	display: none;
+}
+
+/*========================================
+			MAIN CONTENT - STYLES
+========================================*/
+
+#content_container {
+	height: calc(100% - 37px);
+	height: calc(100% - 37px);
+	height: -moz-calc(100% - 37px);
+	width: 100%;
+	vertical-align: top;
+	overflow-y: auto;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 37px;
+	left: 0;	
+}
+
+#page_title{
+	margin-top: 40px;
+}
+
+#content_container h1, #content_container h2 {
+	margin-left: calc(2% + 50px);
+}
+
+.table_container {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#siblingGrid_table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#siblingGrid_table tr {
+	width: 100%;
+}
+
+#siblingGrid_table td {
+	width: 50%;
+	padding: 8px;
+}
+
+/*==============================================================*/
+
+
+
+
+/*==============================================================
+						JQ WIDGETS
+==============================================================*/
+
+#content_container .widgetContainer {
+	display: block;
+	height: 100%;
+	padding: 12px;
+}
+
+#jqxgrid, #jqxgrid2, #jqxgrid3 {
+	-moz-box-shadow: 2px 5px 12px #888;
+	-webkit-box-shadow: 2px 5px 12px #888;
+	box-shadow: 2px 5px 12px #888;
+}
+
+.gridOptions {
+	font-family: Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	color: #2a2e30 !important;
+	background: #ddd !important;
+	border-radius: 2px !important;
+	border: 1px solid #aaa  !important;
+	padding: 3px !important;
+}
+
+.gridOptions:hover {
+	color: #8a97a0 !important;
+	cursor: pointer !important;
+}
+
+/*OVERRIDES*/
+
+.jqx-button {
+	  font-family: Helvetica, sans-serif !important;
+	  font-size: 18px !important;
+	  border: 1px solid #aaa !important;
+	  background: #ddd !important;
+	  color: #2a2e30;
+	  border-radius: 2px !important;
+}
+
+.jqx-button:hover {
+	color: #8a97a0;
+	cursor: pointer;
+}
+
+.jqx-fill-state-disabled {
+	color: #000 !important;
+	opacity: .55 !important;
+	cursor: default !important;
+}
+
+#grid_add_button, #grid_cancel_button, #grid_upload_button {
+	background: none !important;
+	border: none !important;
+	width: 25px !important;
+	height: 25px !important;
+	padding: 0;
+}
+
+#grid_cancel_button {
+	margin: 2px auto;
+}
+
+/*=====================================================================*/
+
+
+#content_container #main_loading_screen {
+	display: none;
+	opacity: 0.0;
+	background: rgba(0,0,0,0.6);
+	z-index: 3000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#content_container #main_loading_screen div {	
+	color: #fff;
+	font-size: 24px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+#content_container .sectionContainer {
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+}
+
+#content_container .sectionContainer .sectionBorder {
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+	border: 1px dashed #fff;
+}
+
+#content_container .sectionHeader {
+	background: #f0efea;
+	display: block;
+	border-radius: 4px;
+	height: 34px;
+	margin-bottom: 8px;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 22px;
+	padding: 4px;
+	border-bottom: 2px solid #d1d1d1;
+	text-align: center;
+}
+
+#content_container .sectionSubHeader {
+	background: #d1d1d1;
+	display: block;
+	border-radius: 4px 4px 0px 0px;
+	height: 34px;
+	margin-bottom: -9px;
+	padding: 3px;
+	border-bottom: 2px solid #d1d1d1;
+}
+
+#content_container .sectionSubHeader  #center_label {
+	display: block;
+	text-align: center;
+	padding: 2px 10px;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#content_container .sectionSubHeader  #left_label {
+	display: inline-block;
+	width: calc(50% - 4px);
+	text-align: center;
+	padding: 2px 10px;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#content_container .sectionSubHeader  #right_label {
+	display: inline-block;
+	width: calc(50% - 4px);
+	text-align: center;
+	padding: 2px 10px;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#content_container .sectionForm {
+	background: #ededed;
+	display: block;
+	height: calc(100% - 110px);
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 16px;
+	padding: 4px;
+	border: 1px solid #d1d1d1;
+	border-bottom: 2px solid #d1d1d1;
+	overflow-y: auto;
+	margin-top: -7px;
+	margin-bottom: -9px;
+}
+
+#content_container .sectionForm .sectionTableContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(50% - 8px);
+	height: 100%;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container {
+	width: 100%;
+	height: 56px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container table  {
+	display: inline-block;
+	padding: 8px 4px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container table td {
+	padding: 2px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container label {
+	font-size: 18px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container select {
+	width: 200px;
+	height: 30px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container #add_combination_btn {
+	width: 25px;
+	height: 25px;
+	background: #50be50;
+	border-radius: 50%;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0px;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer #tree_selector_container #add_combination_btn:hover {
+	background-color: #70de70;
+}
+
+#content_container .sectionForm .sectionTableContainer #horizontal_slider {
+	display: inline-block;
+	vertical-align: top;
+	width: 4px;
+	padding: 0px 2px;
+	cursor: ew-resize;
+	height: 100%;
+	margin-left: 2px;
+}
+
+#content_container .sectionForm .sectionTableContainer #horizontal_slider div {
+	display: inline-block;
+	vertical-align: top;
+	width: 1px;
+	height: 100%;
+	background: #777;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart {
+	width: 100%;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart, #content_container .sectionForm .sectionTableContainer .ganttChart tr, #content_container .sectionForm .sectionTableContainer .ganttChart td {
+	border-collapse: collapse;
+	border: 1px solid #aaa;
+	padding: 0px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart td {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart td div {
+	text-align: center;
+	line-height: 25px;
+	padding: 0px 4px;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	white-space: nowrap;
+}
+
+#content_container .sectionSubFooter {
+	background: #d1d1d1;
+	display: block;
+	border-radius: 0px 0px 4px 4px;
+	height: 34px;
+	margin-top: -7px;
+	padding: 3px;
+	border-bottom: 2px solid #d1d1d1;
+	position: relative;
+}
+
+#content_container .sectionSubFooter .mainNavigationBox {
+	position: absolute;
+	right: 4px;
+	display: inline-block;
+}
+
+#content_container #save_changes_btn {
+	display: none;
+	background: #50be50;
+	border-radius: 4px;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+}
+
+#content_container #save_changes_btn:hover {
+	background: #70de70;
+}
+
+#content_container #upload_changes_btn {
+	display: none;
+	background: #5084be;
+	border-radius: 4px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+}
+
+#content_container #upload_changes_btn:hover {
+	background: #70a4de;
+}
+
+#content_container .uploadInactive {	
+	background: #878787 !important;
+	border: 1px solid #646464 !important;
+	border-width: 1px 1px 3px !important;
+	cursor: default !important;
+	color: #bebebe !important;
+}
+
+#content_container .uploadInactive:hover {
+	background: #878787 !important;
+}
+
+/*====================================================================
+=======================  DOCUMENT POPUP  =============================
+====================================================================*/
+
+#document_popup_container {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 3000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#document_popup_container #document_name_container {
+	position: fixed;
+	top: calc(50% - 87px);
+	top: -moz-calc(50% - 87px);	
+	top: -webkit-calc(50% - 87px);	
+	left: calc(50% - 250px);
+	left: -moz-calc(50% - 250px);	
+	left: -webkit-calc(50% - 250px);
+	z-index: 3100;
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	width: 500px;
+	height: 175px;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 12px;
+	color: #ddd;
+}
+
+#document_popup_container #document_name_header {
+	background: #f0efea;
+	color: rgba(0,0,0,0.7);
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 8px;
+	text-align: center;
+	border-radius: 4px;
+	height: 34px;
+}
+
+#document_popup_container #doc_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 17px;
+	right: 17px;
+	background: #ccc;
+}
+
+#document_popup_container #doc_cancel_btn:hover {	
+	cursor: pointer;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#document_popup_container table {
+	width: 100%;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+#document_popup_container table td {
+	width: 100%;
+	padding: 10px 0px;
+	vertical-align: top;
+}
+
+#document_popup_container table input {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding: 2px;
+	border: none;
+	font-size: 16px;
+	background: #f0efea;
+	box-shadow: inset 0 0 5px #888;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+}
+
+#document_popup_container #save_doc_btn {
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	-moz-margin-left: calc(50% - 100px);
+	-webkit-margin-left: calc(50% - 100px);
+	height: 50px;
+	margin-bottom: 8px;
+	background: #5084be;
+	font-size: 18px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+#document_popup_container #save_doc_btn:hover {
+	cursor: pointer;	
+	background: #70a4de;
+}
+
+
+/*====================================================================
+=====================  PLAN CONFIG POPUP  ============================
+====================================================================*/
+
+#plan_config_popup_container {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 3000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#plan_config_popup_container #plan_config_name_container {
+	position: fixed;
+	top: calc(50% - 87px);
+	top: -moz-calc(50% - 87px);	
+	top: -webkit-calc(50% - 87px);	
+	left: calc(50% - 250px);
+	left: -moz-calc(50% - 250px);	
+	left: -webkit-calc(50% - 250px);
+	z-index: 3100;
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	width: 500px;
+	height: 175px;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 12px;
+	color: #ddd;
+}
+
+#plan_config_popup_container #plan_config_name_header {
+	background: #f0efea;
+	color: rgba(0,0,0,0.7);
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 8px;
+	text-align: center;
+	border-radius: 4px;
+	height: 34px;
+}
+
+#plan_config_popup_container #plan_config_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 17px;
+	right: 17px;
+	background: #ccc;
+}
+
+#plan_config_popup_container #plan_config_cancel_btn:hover {	
+	cursor: pointer;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#plan_config_popup_container table {
+	width: 100%;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+#plan_config_popup_container table td {
+	width: 100%;
+	padding: 10px 0px;
+	vertical-align: top;
+}
+
+#plan_config_popup_container table input {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding: 2px;
+	border: none;
+	font-size: 16px;
+	background: #f0efea;
+	box-shadow: inset 0 0 5px #888;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+}
+
+#plan_config_popup_container #save_doc_btn {
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	-moz-margin-left: calc(50% - 100px);
+	-webkit-margin-left: calc(50% - 100px);
+	height: 50px;
+	margin-bottom: 8px;
+	background: #5084be;
+	font-size: 18px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+#plan_config_popup_container #generate_plan_config_btn:hover {
+	cursor: pointer;	
+	background: #70a4de;
+}

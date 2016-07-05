@@ -1,0 +1,1936 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA
+	Directory:			FARA/PLANNING/CSS
+	File Name:			main.css
+=============================================================*/
+
+/*========================================
+			MAIN CONTENT - STYLES
+========================================*/
+
+#content_container {
+	height: calc(100% - 37px);
+	height: calc(100% - 37px);
+	height: -moz-calc(100% - 37px);
+	width: 100%;
+	vertical-align: top;
+	overflow-y: auto;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 37px;
+	left: 0;	
+}
+
+#content_container #main_loading_screen {
+	display: none;
+	opacity: 0.0;
+	background: rgba(0,0,0,0.6);
+	z-index: 3000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#content_container #main_loading_screen div {
+	color: #fff;
+	font-size: 24px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+#content_container .buttonInactive {
+	background: #878787 !important;
+	border-color: #646464 !important;
+	cursor: default !important;
+	color: #bebebe !important;
+}
+
+#content_container select:disabled {
+	background: #ebebe4 !important;
+	border-color: #a9a9a9 !important;
+	cursor: default !important;
+	color: rgb(84,84,84) !important;
+}
+
+#content_container .sectionContainer {
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+}
+
+#content_container .sectionContainer .sectionBorder {
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+	border: 1px dashed #fff;
+}
+
+#content_container .sectionHeader {
+	background: #f0efea;
+	display: block;
+	border-radius: 4px;
+	height: 34px;
+	margin-bottom: 8px;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 22px;
+	padding: 4px;
+	border-bottom: 2px solid #d1d1d1;
+	text-align: center;
+}
+
+#content_container .sectionSubHeader {
+	background: #d1d1d1;
+	display: block;
+	border-radius: 4px 4px 0px 0px;
+	height: 34px;
+	margin-bottom: -7px;
+	padding: 4px;
+	border-bottom: 2px solid #d1d1d1;
+	position: relative;
+}
+
+#content_container .sectionSubHeader #plan_gantt_toggle {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #91ABC2; // a0a0a0;
+	border-radius: 4px;
+	border: 1px solid #366191; // 5c5c5c;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	padding: 2px 12px;
+	height: 28px;
+	width: 121px;
+}
+
+#content_container .sectionSubHeader #plan_gantt_toggle:hover {	
+	background: #5084B3; //bebebe;
+}
+
+#content_container .sectionSubHeader #plan_review_toggle {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #91ABC2; // a0a0a0;
+	border-radius: 4px;
+	border: 1px solid #366191; // 5c5c5c;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	left: 129px;
+	top: 4px;
+	padding: 2px 12px;
+	height: 28px;
+	width: 101px;
+}
+
+#content_container .sectionSubHeader #review_badges {
+	color: #fff;
+	font-size: 14px;
+	background: #BE5050;
+	border-radius: 50%;
+	border: 1px solid #6C1E1E;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	height: 24px;
+	width: 24px;
+	line-height: 20px;
+	z-index: 100;
+}
+
+#content_container .sectionSubHeader #plan_review_toggle:hover {	
+	background: #5084B3; //bebebe;
+}
+
+#content_container .sectionSubHeader #plan_calendar_toggle {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #91ABC2; // a0a0a0;
+	border-radius: 4px;
+	border: 1px solid #366191; // 5c5c5c;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	left: 234px;
+	top: 4px;
+	padding: 2px 12px;
+	height: 28px;
+	width: 116px;
+}
+
+#content_container .sectionSubHeader #plan_calendar_toggle:hover {	
+	background: #5084B3; //bebebe;
+}
+
+#content_container .sectionSubHeader #lineup_toggle {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #91ABC2; // a0a0a0;
+	border-radius: 4px;
+	border: 1px solid #366191; // 5c5c5c;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	left: 354px;
+	top: 4px;
+	padding: 2px 12px;
+	height: 28px;
+}
+
+#content_container .sectionSubHeader #lineup_toggle:hover {	
+	background: #5084B3; //bebebe;
+}
+
+#content_container .sectionSubHeader .isinfocus {	
+	background: #5084b3 !important;
+	border-color: #366191 !important;
+}
+
+#content_container .sectionSubHeader .isinfocus:hover {	
+	background: #70a4de !important;
+}
+
+#content_container .sectionSubHeader #plan_component_button {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #50be50;
+	border-radius: 4px;
+	border: 1px solid #227622;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	right: 160px;
+	top: 4px;
+	padding: 2px 12px;
+	height: 28px;
+}
+
+#content_container .sectionSubHeader #plan_component_button:hover {
+	background: #70de70;
+}
+
+#content_container .sectionSubHeader #plan_component_container {
+	position: absolute;
+	top: 38px;
+	right: 168px;
+	background: rgba(0,0,0,0.9);
+	width: 360px;
+	border: 1px solid #000;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px;
+	color: #ddd;
+	border-radius: 4px;
+	z-index: 1900;
+}
+
+#content_container .sectionSubHeader #plan_component_container #plan_component_header {
+	background: #f0efea;
+	color: rgba(0,0,0,0.7);
+	display: block;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+	border-radius: 4px;
+	height: 34px;
+	border-bottom: 2px solid #989793;
+	cursor: pointer;
+}
+
+#content_container .sectionSubHeader #plan_component_container #plan_component_cancel {
+	border-radius: 2px;
+	width: 17px;
+	height: 17px;
+	font-size: 14px;
+	background: #ccc;
+	color: #fff;
+	position: absolute;
+	right: -4px;
+	top: -4px;
+	line-height: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#content_container .sectionSubHeader #plan_component_container #plan_component_cancel:hover {
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#content_container .sectionSubHeader #plan_component_container table {
+	width: 100%;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+#content_container .sectionSubHeader #plan_component_container table td {
+	padding: 10px 0px;
+	vertical-align: top;
+}
+
+#content_container .sectionSubHeader #plan_component_container table select {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding: 2px;
+	border: none;
+	font-size: 16px;
+	background: #f0efea;
+	box-shadow: inset 0 0 5px #888;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+}
+
+#content_container .sectionSubHeader #plan_component_container #add_combination_btn {
+	width: 150px;
+	margin-left: calc(50% - 75px);
+	height: 35px;
+	margin-bottom: 8px;
+	background: #5084b3;
+	font-size: 16px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 4px;	
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	cursor: pointer;
+}
+
+#content_container .sectionSubHeader #plan_component_container #add_combination_btn:hover {
+	background: #70a4de;
+}
+
+#content_container .sectionSubHeader #calendar_component_container {
+	position: absolute;
+	top: 38px;
+	left: 186px;
+	background: rgba(0,0,0,0.9);
+	width: 360px;
+	border: 1px solid #000;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px;
+	color: #ddd;
+	border-radius: 4px;
+	z-index: 1900;
+}
+
+#content_container .sectionSubHeader #calendar_component_container #calendar_component_cancel {
+	border-radius: 2px;
+	width: 17px;
+	height: 17px;
+	font-size: 14px;
+	background: #ccc;
+	color: #fff;
+	position: absolute;
+	right: -4px;
+	top: -4px;
+	line-height: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#content_container .sectionSubHeader #calendar_component_container #calendar_component_cancel:hover {
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#content_container .sectionSubHeader #calendar_component_container #calendar_component_header #calendar_component_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 13px;
+	right: 13px;
+	background: #ccc;
+}
+
+#content_container .sectionSubHeader #calendar_component_container #calendar_component_header #calendar_component_cancel_btn:hover {
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#content_container .sectionSubHeader #calendar_component_container table {
+	width: 100%;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+#content_container .sectionSubHeader #calendar_component_container table td {
+	padding: 10px 0px;
+	vertical-align: top;
+}
+
+#content_container .sectionSubHeader #calendar_component_container table select {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding: 2px;
+	border: none;
+	font-size: 16px;
+	background: #f0efea;
+	box-shadow: inset 0 0 5px #888;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+}
+
+#content_container .sectionSubHeader #plan_week_selector {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #BE5050;
+	border-radius: 4px;
+	border: 1px solid #6C1E1E;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	padding: 0px 4px;
+	height: 28px;
+	width: 152px;
+}
+
+#content_container .sectionSubHeader #plan_week_selector .currentWeek {
+	color: #6C1E1E;
+	background: #fff;
+}
+
+#content_container .sectionSubHeader #plan_week_selector:hover {
+	background: #DE7070;
+}
+
+#content_container .sectionSubHeader #plan_week_selector option {
+	background: #6C1E1E;
+}
+
+#content_container .sectionForm {
+	background: #ededed;
+	display: block;
+	height: calc(100% - 112px);
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 16px;
+	border: 1px solid #d1d1d1;
+	border-bottom: 2px solid #d1d1d1;
+	overflow-y: auto;
+	margin-top: -7px;
+	margin-bottom: -9px;
+}
+
+#content_container .sectionForm .sectionTableContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#content_container .sectionForm .sectionTableContainer .widgetContainer {
+	padding: 8px 0px;
+	height: calc(100% - 16px);
+}
+
+#content_container .sectionForm .sectionTableContainer #gantt_chart_container #gantt_no_data {
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	color: rgba(0,0,0,0.4);
+	font-style: italic;
+	font-size: 20px;
+}
+
+#content_container .sectionForm .sectionTableContainer #gantt_chart_container #gantt_no_data span {
+	color: rgba(228,64,64,0.4);
+}
+
+#content_container .sectionForm .sectionTableContainer #gantt_chart .ganttHeaderRow td {
+	color: #fff;
+	//background: #BE5050; 
+	background: #366191;
+}
+
+#content_container .sectionForm .sectionTableContainer #gantt_chart .ganttToolTip {
+	z-index: 100;
+	position: absolute;
+	top: -16px;
+	left: 0px;
+	background: linear-gradient(#fff, #e4e5ff);
+	color: #555;
+	padding: 2px;
+	font-size: 12px;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	width: auto;
+	white-space: nowrap;
+}
+
+#content_container .sectionSubHeader #tree_selector_container {
+	position: absolute;
+	left: calc(50% - 465px);
+	top: -6px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container table  {
+	display: inline-block;
+	padding: 8px 4px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container table td {
+	padding: 2px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container label {
+	font-size: 18px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container select {
+	width: 200px;
+	height: 30px;
+	font-size: 16px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container #add_combination_btn {
+	width: 25px;
+	height: 25px;
+	background: #50be50;
+	border-radius: 50%;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0px;
+}
+
+#content_container .sectionSubHeader #tree_selector_container #add_combination_btn:hover {
+	background-color: #70de70;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart {
+	width: 100%;
+	font-weight: normal;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChartBody {
+	margin: -2px;
+	overflow-y: auto;
+	background: #ededed;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChartBody::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChartBody::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0);
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChartBodyTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart, #content_container .sectionForm .sectionTableContainer .ganttChart tr, #content_container .sectionForm .sectionTableContainer .ganttChart td {
+	border-collapse: collapse;
+	border: 2px solid #ededed;
+	padding: 0px;
+	max-width: 93px;
+	min-width: 93px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart td {
+	background: #fff;
+	position: relative;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .editLocationBtn {
+	width: 25px;
+	height: 25px;
+	background: #e8b53e;
+	border-radius: 50%;
+	border: 1px solid #9c7721;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 3px;
+	font-size: 22px;
+	color: #000;
+	padding: 0px;
+	position: absolute;
+	top: 1px;
+	right: 30px;
+	cursor: pointer
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .editLocationBtn:hover {
+	background: #f1cf82;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .deleteLocationBtn {
+	width: 25px;
+	height: 25px;
+	background: #be5050;
+	border-radius: 50%;
+	border: 1px solid #9f3636;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 16px;
+	color: #fff;
+	padding: 0px;
+	padding-right: 1px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	cursor: pointer
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .deleteLocationBtn:hover {
+	background: #de7070;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .deleteMethodBtn {
+	width: 25px;
+	height: 25px;
+	background: #be5050;
+	border-radius: 50%;
+	border: 1px solid #9f3636;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 16px;
+	color: #fff;
+	padding: 0px;
+	padding-right: 1px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	cursor: pointer
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .deleteMethodBtn:hover {
+	background: #de7070;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart td .tdCont {
+	text-align: center;
+	line-height: 25px;
+	padding: 3px 4px;
+	font-size: 16px;
+	font-weight: normal;
+	height: 28px;
+	overflow: hidden;
+	position: relative;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart td .tdCont2 {
+	text-align: center;
+	line-height: 25px;
+	padding: 3px 4px;
+	font-size: 16px;
+	font-weight: bold;
+	height: 28px;
+	overflow: hidden;
+	position: relative;
+	color: #d1d1d1;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAssets {
+	position: absolute;
+	top: 28px;
+	width: auto;
+	min-width: calc(100% + 2px);
+	height: auto;
+	z-index: 100;
+	opacity: .9;
+	white-space: nowrap;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .positionLeft {
+	left: -1px;
+	box-shadow: 0px 4px 2px 0px #000;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .positionRight {
+	right: -1px;
+	box-shadow: 0px 4px 2px 0px #000;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .shiftHeader {
+	height: 20px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .shiftHeader span {
+	font-size: 14px;
+	margin: 0px 0px 6px 0px;
+	color: #C80909;
+	font-weight: bold;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .shiftHeader .shiftHeaderLeftSpan {
+	float: left;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .shiftHeader .shiftHeaderRightSpan {
+	float: right;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox {
+	border: 1px solid rgba(0,0,0,0.7);
+	max-height: 400px;
+	display: block;
+	width: auto;
+	padding: 6px;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .editStepBtn {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 6px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .editStepBtn:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .updateStepBtn {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 6px;
+	margin-right: 4px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .updateStepBtn:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .editMachineBtn {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 6px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .editMachineBtn:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .updateMachineBtn {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 6px;
+	margin-right: 4px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBox .updateMachineBtn:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .ceA {
+	cursor: pointer;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .ceB {
+	cursor: pointer;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .ceC {
+	cursor: pointer;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .expandedStepCancel {
+	border-radius: 2px;
+	width: 17px;
+	height: 17px;
+	font-size: 14px;
+	background: #ccc;
+	color: #fff;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	line-height: 16px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .expandedStepCancel:hover {
+	-webkit-duration: .3s;
+    -moz-duration: .3s;
+    -o-duration: .3s;
+    transition-duration: .3s;
+    background: #c5495b;
+}
+
+#content_container .sectionForm .ganttChart .triangle {
+	cursor: pointer;
+	background: url("../images/tri_up.png") no-repeat left;
+	background-size: contain;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 10px;
+	left: 4px;
+}
+
+#content_container .sectionForm .ganttChart .tri_up {
+	cursor: pointer;
+	background: url("../images/tri_up.png") no-repeat left;
+	background-size: contain;
+}
+
+#content_container .sectionForm .ganttChart .tri_down {
+	cursor: pointer;
+	background: url("../images/tri_down.png") no-repeat left;
+	background-size: contain;
+}
+
+#content_container #review_window .triangle {
+	cursor: pointer;
+	background: url("../images/tri_up.png") no-repeat left;
+	background-size: contain;
+	width: 10px;
+	height: 10px;
+}
+
+#content_container #review_window .tri_up {
+	cursor: pointer;
+	background: url("../images/tri_up.png") no-repeat left;
+	background-size: contain;
+}
+
+#content_container #review_window .tri_down {
+	cursor: pointer;
+	background: url("../images/tri_down.png") no-repeat left;
+	background-size: contain;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAsset {
+	color: #000;
+	border-bottom: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAsset .ganttStepEdit  {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	background: #50BE50;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAsset .ganttStepEdit option  {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	background: #F0EFEA;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAsset .stepSelectCancel  {
+	position: absolute;
+	z-index: 100;
+	width: 17px;
+	height: 17px;
+	background: #ccc;
+	border-radius: 2px;
+	top: 1px;
+	right: 1px;
+	cursor: pointer;
+	color: #eee;
+	text-align: center;
+	font-size: 14px;
+	line-height: 16px;
+	font-style: normal;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .stepAsset .stepSelectCancel:hover  { 
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets {
+	color: #000;
+	border-bottom: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets select {
+	width: 250px;
+	height: 28px;	
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets input {
+	width: 50px;
+	height: 22px;	
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets .ganttMachineEdit  {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 28px;
+	width: 100%;
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+	font-size: 16px;
+	font-weight: bold;
+	background: #F0EFEA;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets .machineSelectCancel  {
+	position: absolute;
+	z-index: 100;
+	width: 17px;
+	height: 17px;
+	background: #ccc;
+	border-radius: 2px;
+	top: 1px;
+	right: 1px;
+	cursor: pointer;
+	color: #eee;
+	text-align: center;
+	font-size: 14px;
+	line-height: 16px;
+	font-style: normal;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineAssets .machineSelectCancel:hover  { 
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .OPERATIVO {
+	background: #F0EFEA;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .FUERASER {
+	background: #F0EFEA;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .machineDelay {
+	background: #FFE953 !important;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets {
+	background: #877290;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets .measuresHeader {
+	position: absolute;
+	top: 8px;
+	left: 18px;
+	width: calc(100% - 10px);
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets td {
+	padding: 0px 4px;
+	text-align: center;
+	background: none;
+	border: none;
+	font-weight: normal;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets td div {
+	color: #fff;
+	font-style: italic;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets td input {
+	width: 75px;
+	height: 28px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets .updateValues {
+	display: block;
+	height: 28px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets .updateValues div {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .measureAssets .updateValues div:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .noMeasures {
+	height: 0px !important;
+	padding: 0px !important;
+	border-width: 0px 0px 2px 0px !important;
+	background: #75C9ED !important;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .editAssets {
+	display: block;
+	height: 28px;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .editAssets div {
+	float: right;
+	background: #d1d1d1;
+	padding: 4px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .editAssets div:hover {
+	background: #fff;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .assetBoxFront {
+	z-index: 200;
+	opacity: 1.0;
+	box-shadow: 0px 4px 10px 0px #000;
+}
+
+#content_container .sectionForm .sectionTableContainer .ganttChart .ganttHeaderCell {
+	font-size: 16px;
+}
+
+#content_container .sectionSubFooter {
+	background: #d1d1d1;
+	display: block;
+	border-radius: 0px 0px 4px 4px;
+	height: 34px;
+	margin-top: -7px;
+	padding: 3px;
+	border-bottom: 2px solid #d1d1d1;
+	position: relative;
+}
+
+#content_container .sectionSubFooter .mainNavigationBox {
+	position: absolute;
+	right: 4px;
+	display: inline-block;
+}
+
+#content_container .mainNavigationBox #plan_status_label {
+	font-size: 16px;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 4px;
+	font-style: italic;
+	color: rgba(0,0,0,0.7);
+}
+
+#content_container .mainNavigationBox #plan_status_indicator {
+	font-size: 16px;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#content_container .btnBlue {
+	display: inline-block;
+	background: #5084be;
+	border-radius: 4px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+	width: 120px;
+	height: 28px;
+}
+
+#content_container .btnBlue:hover {
+	background: #70a4de;
+}
+
+#content_container .btnGreen {
+	display: inline-block;
+	background: #50be50;
+	border-radius: 4px;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+	width: 120px;
+	height: 28px;
+}
+
+#content_container .btnGreen:hover {
+	background: #70de70;
+}
+
+#content_container #add_lineup_btn, #content_container #submit_lineup_btn {
+	width: 150px;
+}
+
+#content_container #submit_rquest_btn {
+	width: 120px;
+}
+
+#content_container #upload_changes_btn {
+	display: inline-block;
+	background: #5084be;
+	border-radius: 4px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+}
+
+#content_container #upload_changes_btn:hover {
+	background: #70a4de;
+}
+
+#content_container .uploadInactive {	
+	background: #878787 !important; border: 1px solid #646464 !important; border-width: 1px 1px 3px !important; cursor: default !important; color: #bebebe !important;
+}
+
+#content_container .uploadInactive:hover {
+	background: #878787 !important;
+}
+
+#content_container .configPopupContainer {
+	overflow: hidden; height: calc(100% - 100px); width: 1000px; top: 46px; left: calc(50% - 500px); background: #000; border: 1px solid #000; font-size: 18px; font-weight: normal; padding: 8px; color: #ddd; border-radius: 4px;
+}
+
+#content_container .configPopupContainer input, #content_container .configPopupContainer select {
+	height: 30px; font-size: 16px; margin: 0; outline: 0; padding: 5px; background-color: #f0efea; color: #2a2e30; border-radius: 2px; border: 1px solid rgba(0,0,0,.3);
+}
+
+#content_container .configPopupContainer .configHeader {
+	background: #f0efea; display: block; padding: 8px; text-align: center; border-radius: 4px; height: 34px; border-bottom: 2px solid #d1d1d1; 
+}
+
+#content_container .configPopupContainer .configHeader span {
+	color: rgba(0,0,0,0.7); display: inline-block; font-weight: bold; font-size: 18px;
+}
+
+#content_container .configPopupContainer .configSubHeader {
+	background: #d1d1d1; display: block; border-radius: 4px; padding: 10px 10px 4px 10px; border-bottom: 2px solid #a1a1a1; margin-top: 8px;
+}
+
+#content_container .configPopupContainer .configSubHeader .parentTable {
+	margin: 0px 50px; display: inline-block; color: rgba(0,0,0,0.7);
+}
+
+#content_container .configPopupContainer .parentTable .labelTD {
+	width: 116px; padding: 8px; text-align: right;
+}
+
+#content_container .configPopupContainer .parentTable input {
+	width: 225px;
+}
+
+#content_container .configPopupContainer .parentTable tr {
+	display: block;
+}
+
+#content_container .configPopupContainer .parentTable td {
+	display: inline-block;
+}
+
+#content_container .configPopupContainer .parentTable input, #content_container .configPopupContainer .parentTable select {
+	width: 225px;
+}
+
+#content_container .configPopupContainer .parentTable input:disabled, #content_container .configPopupContainer .parentTable select:disabled {
+	background: #c3c3c3 !important;
+	color: rgba(0,0,0,0.4) !important;
+	font-weight: bold !important;
+}
+
+#content_container .configPopupContainer .configDescription {
+	display: block; color: rgba(0,0,0,0.7); font-size: 14px; padding: 2px; text-align: center;
+}
+
+#content_container .configPopupContainer #asset_config_description {
+	display: block; color: rgba(0,0,0,0.7); font-size: 24px; padding: 2px; text-align: center; font-weight: bold;
+}
+
+#content_container .configPopupContainer .configMainContainer {
+	display: block; padding: 3px 3px 4px 3px; border: 1px dashed #a1a1a1; margin: 12px 0px; height: calc(100% - 260px); overflow: auto;
+}
+
+#content_container .configPopupContainer .eachStepContainer {
+	//border: 1px dashed #a1a1a1; margin-bottom: -1px; padding: 10px 8px; position: relative; 
+}
+
+#content_container .configPopupContainer .removeStep {
+	border-radius: 2px; width: 17px; height: 17px; font-size: 14px; background: #ccc; color: #fff; position: absolute; right: 0px; top: 0px; line-height: 16px; cursor: pointer; text-align: center;
+}
+
+#content_container .configPopupContainer .removeStep:hover {
+	-webkit-duration: .3s; -moz-duration: .3s; -o-duration: .3s; transition-duration: .3s; background: #c5495b;
+}
+
+#content_container .configPopupContainer .stepHeaderContainer {
+	background: #2F5A89; border-radius: 4px; border-bottom: 2px solid #183E67; padding: 5px 4px 0px 4px; height: 45px;
+}
+
+#content_container .configPopupContainer .leftConfigTable {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+#content_container .configPopupContainer .middleConfigTable {
+	display: inline-block;
+}
+
+#content_container .configPopupContainer .rightConfigTable {
+	display: inline-block;
+	float: right;
+}
+
+#content_container .configPopupContainer .stepsDurationTable {
+	display: inline-block;
+	float: right;
+}
+
+#content_container .configPopupContainer .leftConfigTable tbody, #content_container .configPopupContainer .middleConfigTable tbody {
+	display: block;
+}
+
+#content_container .configPopupContainer .leftConfigTable td, #content_container .configPopupContainer .middleConfigTable td {
+	text-align: left;
+	padding: 0px 4px;
+}
+
+#content_container .configPopupContainer .leftConfigTable .leftConfigSpan, #content_container .configPopupContainer .middleConfigTable .leftConfigSpan {
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .leftConfigTable .leftConfigSpan2, #content_container .configPopupContainer .middleConfigTable .leftConfigSpan2 {
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .leftConfigTable input, #content_container .configPopupContainer .leftConfigTable select {
+	width: 250px;
+}
+
+#content_container .configPopupContainer .middleConfigTable select {
+	width: 50px;
+}
+
+#content_container .configPopupContainer .middleConfigTable select:disabled {
+	background: #c3c3c3;
+}
+
+#content_container .configPopupContainer .rightConfigTable input[type="number"] {
+	width: 100px;
+}
+
+#content_container .configPopupContainer .rightConfigTable .rightConfigSpan {
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .shiftChildTable {
+	width: 100%;
+	vertical-align: top;
+	margin-top: 8px
+}
+
+#content_container .configPopupContainer .shiftChildTable td {
+	padding: 4px;
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftMachineHeaderCell {
+	padding: 4px 8px 2px;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	color: #000;
+}
+
+#content_container .configPopupContainer .shiftChildTable .OPERATIVO {
+	background: #f0efea;
+}
+
+#content_container .configPopupContainer .shiftChildTable .FUERASER {
+	background: #f0efea !important;
+}
+
+#content_container .configPopupContainer .shiftChildTable .machineDelay {
+	background: #DDCA49;
+}
+
+#content_container .configPopupContainer .shiftChildTable .workerSelect {
+	color: #fff;
+	width: 100%;
+	background: #000;
+}
+
+#content_container .configPopupContainer .shiftChildTable .workerSelect option {
+	color: #000;
+}
+
+#content_container .configPopupContainer .shiftChildTable .workerSelect:hover {
+	background: rgba(255,255,255,.2);
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftAssetButtonContainer {
+	float: right;
+	position: relative;
+	width: 50px;
+	height: 25px;
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftAddPersonBtn {
+	width: 25px;
+	height: 25px;
+	background: #50be50;
+	border-radius: 50%;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 22px;
+	color: #fff;
+	padding: 0px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -2px;
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftAddPersonBtn:hover {
+	background-color: #70de70;
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftRemovePersonBtn {
+	width: 25px;
+	height: 25px;
+	background: #be5050;
+	border-radius: 50%;
+	border: 1px solid #9f3636;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 3px;
+	font-size: 22px;
+	color: #fff;
+	padding: 0px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -2px;
+}
+
+#content_container .configPopupContainer .shiftChildTable .shiftRemovePersonBtn:hover {
+	background-color: #de7070;
+}
+
+#content_container .configPopupContainer .stepDaysTable {
+	width: 100%;
+	padding: 8px 0px 0px 0px;
+	font-size: 16px;
+}
+
+#content_container .configPopupContainer .stepDaysTable td {
+	text-align: center;
+	height: 25px;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayLabelCell {
+	width: 106px;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell {
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+	width: 89px;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell.enabled {
+	background: #f0efea;
+	cursor: pointer;
+	color: #2a2e30;
+	background: #f0efea;
+	cursor: pointer;
+	color: #2a2e30;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell.daySelected {
+	background: #5084BE;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell.disabled {
+	background: #a0a0a0;
+	border-color: #5c5c5c;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell.disabled2 {
+	background: #ca9393;
+	border-color: #5c5c5c;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepDaysTable .stepDayCell.enabled:hover {
+	background: #70a4de;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepShiftTable td {
+	text-align: center;
+	height: 25px;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepDayLabelCell {
+	width: 106px;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell {
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+	width: 50px;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell.enabled {
+	background: #f0efea;
+	cursor: pointer;
+	color: #2a2e30;
+	background: #f0efea;
+	cursor: pointer;
+	color: #2a2e30;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell.shiftSelected {
+	background: #5084BE;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell.disabled {
+	background: #a0a0a0;
+	border-color: #5c5c5c;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell.disabled2 {
+	background: #ca9393;
+	border-color: #5c5c5c;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .stepShiftTable .stepShiftCell.enabled:hover {
+	background: #70a4de;
+	color: #fff;
+}
+
+#content_container .configPopupContainer .selectDaysDescription {
+	text-align: right;
+	font-size: 14px;
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .materialChildTable {
+	display: inline-block;
+	margin: 12px 0px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+#content_container .configPopupContainer .materialChildTable .materialSpan {
+	color: #F0EFEA;
+	margin-left: 10px;
+}
+
+#content_container .configPopupContainer .machineChildTable {
+	display: inline-block;
+	margin: 12px 0px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+#content_container .configPopupContainer .machineChildTable .machineSpan {
+	color: #F0EFEA;
+	margin-left: 10px;
+}
+
+#content_container .configPopupContainer .measureChildTable {
+	display: block;
+	vertical-align: top;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+#content_container .configPopupContainer .measureChildTable input {
+	width: 100px !important;
+}
+
+#content_container .configPopupContainer .measureChildTable tbody {
+	display: block;
+	padding: 2px 6px;
+}
+
+#content_container .configPopupContainer .measureChildTable td {
+	text-align: left;
+}
+
+#content_container .configPopupContainer .measureChildTable .measureSpan {
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .measureChildTable .componentTable {
+	display: inline-block;
+	width: 235px;
+}
+
+#content_container .configPopupContainer .assetChildTable {
+	display: inline-block;
+	margin: 12px 0px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+#content_container .configPopupContainer .assetChildTable select {
+	width: 200px;
+}
+
+#content_container .configPopupContainer .planConfigHr {
+	border-width: 0px;
+	border-top: 1px dashed #a1a1a1;;
+}
+
+#content_container .configPopupContainer .machineChildTable select {
+	width: 150px;
+}
+
+#content_container .configPopupContainer .machineChildTable select option {
+	color: #000;
+}
+
+#content_container .configPopupContainer .assetChildTable .stepAssetButtonContainer {
+	float: right;
+	position: relative;
+	width: 50px;
+	height: 25px;
+}
+
+#content_container .configPopupContainer .assetChildTable .stepAddAssetBtn {
+	width: 25px;
+	height: 25px;
+	background: #50be50;
+	border-radius: 50%;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 22px;
+	color: #F0EFEA;
+	padding: 0px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -2px;
+}
+
+#content_container .configPopupContainer .assetChildTable .stepAddAssetBtn:hover {
+	background: #70de70;
+}
+
+#content_container .configPopupContainer .assetChildTable .stepRemoveAssetBtn {	
+    width: 25px;
+    height: 25px;
+    background: #be5050;
+    border-radius: 50%;
+    border: 1px solid #9f3636;
+    border-width: 1px 1px 3px;
+    text-align: center;
+    line-height: 3px;
+    font-size: 22px;
+    color: #F0EFEA;
+    padding: 0px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+
+#content_container .configPopupContainer .assetChildTable .stepRemoveAssetBtn:hover {
+	background: #de7070;
+}
+
+#content_container .configPopupContainer .componentTable tbody {
+	display: block;
+}
+
+#content_container .configPopupContainer .componentTable td{
+	width: auto;
+	text-align: left;
+	padding: 0px 1px 0px 2px;
+}
+
+#content_container .configPopupContainer .componentTable .OPERATIVO {
+	background: #F0EFEA;
+}
+
+#content_container .configPopupContainer .componentTable .FUERASER {
+	background: #F0EFEA;
+}
+
+#content_container .configPopupContainer .componentTable .machineDelay {
+	background: #FFE953 !important;
+}
+
+#content_container .configPopupContainer .componentTable .descriptionSpan {
+	font-size: 14px;
+	color: #F0EFEA;
+}
+
+#content_container .configPopupContainer .componentTable .machine_step_add_btn {
+	width: 25px;
+	height: 25px;
+	background: #50be50;
+	border-radius: 50%;
+	border: 1px solid #369f36;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0px;
+}
+
+#content_container .configPopupContainer .componentTable .machine_step_add_btn:hover {
+	background-color: #70de70;
+}
+
+
+
+
+
+#content_container .configPopupContainer #alert_message {	
+	background: #f0efea;
+	display: block;
+	padding: 8px;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 4px;
+	height: 128px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content_container .configPopupContainer #alert_message span {
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+#content_container .configPopupContainer .configHeader .configCancelButton {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 13px;
+	right: 13px;
+	background: #ccc;
+}
+
+#content_container .configPopupContainer .configHeader .configCancelButton:hover {
+	cursor: pointer;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#content_container .configPopupContainer .configButton {
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	margin-left: -moz-calc(50% - 100px);
+	margin-left: -webkit-calc(50% - 100px);
+	height: 50px;
+	margin-bottom: 8px;
+	background: #5084be;
+	font-size: 18px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+}
+
+#content_container .configPopupContainer .configButton:hover {
+	cursor: pointer;
+	background: #70a4de;
+}
+
+#content_container .configPopupContainer .configButtonSmall {
+	width: auto;
+	padding: 0px 8px;
+	margin-left: calc(50% - 60px);
+	margin-left: -moz-calc(50% - 60px);
+	margin-left: -webkit-calc(50% - 60px);
+	height: 25px;
+	margin-bottom: 8px;
+	background: #50be50;
+	font-size: 16px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 4px;
+	border: 1px solid #227622;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+}
+
+#content_container .configPopupContainer .configButtonSmall:hover {
+	cursor: pointer;
+	background: #70de70;
+}
+
+
+/*==============================================================*/
+
+
+
+#document_popup_container {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 3000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#document_popup_container #document_name_container {
+	position: fixed;
+	top: calc(50% - 87px);
+	top: -moz-calc(50% - 87px);	
+	top: -webkit-calc(50% - 87px);	
+	left: calc(50% - 250px);
+	left: -moz-calc(50% - 250px);	
+	left: -webkit-calc(50% - 250px);
+	z-index: 3100;
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	width: 500px;
+	height: 175px;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 12px;
+	color: #ddd;
+}
+
+#document_popup_container #document_name_header {
+	background: #f0efea;
+	color: rgba(0,0,0,0.7);
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 8px;
+	text-align: center;
+	border-radius: 4px;
+	height: 34px;
+}
+
+#document_popup_container #doc_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 17px;
+	right: 17px;
+	background: #ccc;
+}
+
+#document_popup_container #doc_cancel_btn:hover {	
+	cursor: pointer;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#document_popup_container table {
+	width: 100%;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+#document_popup_container table td {
+	width: 100%;
+	padding: 10px 0px;
+	vertical-align: top;
+}
+
+#document_popup_container table input {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding: 2px;
+	border: none;
+	font-size: 16px;
+	background: #f0efea;
+	box-shadow: inset 0 0 5px #888;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+}
+
+#document_popup_container #save_doc_btn {
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	-moz-margin-left: calc(50% - 100px);
+	-webkit-margin-left: calc(50% - 100px);
+	height: 50px;
+	margin-bottom: 8px;
+	background: #5084be;
+	font-size: 18px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+#document_popup_container #save_doc_btn:hover {
+	cursor: pointer;	
+	background: #70a4de;
+}
+
+
+/*==============================================================*/
+
+

@@ -1,0 +1,292 @@
+****************************************************************************
+*         FARA IS Web Console v2.5.a Release Notes. June 05,2015.          *
+****************************************************************************
+
+Whats New:
+
+- Users Configuration
+   - Display password and allow for update
+
+- Database Administration
+   - Table of tables can now allow for Materializing virtual tables
+
+- Lists Configuration
+   - Also allow for Materializing virtual lists
+
+- Forms
+   - Added in demo version forms
+      - Safety Observation
+      - Safety Checklist
+      - Workplace Inspection
+   
+   - Saved Forms Grid
+      - Updated the display of the Created Date and the Modified Date to show only Date and not time
+
+   - Submitted Forms Grid
+      - Updated the display of the Created Date and the Modified Date to show only Date and not time
+
+   - All Forms
+      - Added ability to print
+
+- Help
+   - Added a link to take the user to a Help Page
+   
+
+
+****************************************************************************
+*         FARA IS Web Console v2.5.a Release Notes. April 23,2015.         *
+****************************************************************************
+
+Whats New:
+
+- Forms
+   - Added Loading Screen as Forms Load
+   - Updated Search Fields to include:
+      - document name (given by user)
+      - subject (person in question)
+      - manager (manager of subject)
+
+   - All forms
+      - Added functionality for Signatures
+      - Added ability to reset forms
+      - Added ability to update forms
+      - Added ability to Save new forms
+
+   - 5000-23
+      - Added functionality for initials
+      - Added icon to represent touch
+      - Added functionality for multi-selects
+
+Whats Fixed:
+
+- Forms
+   - 5000-23
+      - Fixed sizing issue with task table
+      - Updated Text to represent updated official 5000-23
+      - Fixed header positioning
+
+   - Preop
+      - Fixed odometer validations
+
+   - All Forms
+      - Fixed HTML and CSS to work correctly on the iPad
+   
+
+
+****************************************************************************
+*         FARA IS Web Console v2.5.a Release Notes. April 16,2015.         *
+****************************************************************************
+
+Whats New:
+
+- Significant Form Enhancements
+
+- Nickname capability added to forms
+
+- Disable on Submit added to MEI
+
+- Added Multi-Select to MEI
+
+- Added Span Capabilities to MEI in order to support Form GEOLocation
+
+- Functionality added to Date Fields in MEI
+
+- Preoperation Checklist enhancements
+   - Supports Subject, Manager selections
+   - Graphical Update
+   - Front-End iPad visibility increase
+
+- 5000-23 enhancements
+   - Multi-Select Checklist (currently supported on Desktop Only)
+
+- Signatures, Pictures, GeoLocation now fully supported on Desktop
+
+- Users configuration screen ready
+
+- Updated search capabilities for Form
+   - Saved, Submitted, New Form
+   - GUI changes
+
+- Removed Reason Codes from the menu since it is taken care of by the table of tables
+
+- Hid the production menu item as well as cycles live tracker and equipment status changes due to updates and enhancements that need to be developed
+   - Zac to develop the live tracker using a different map API replacing google maps
+
+- Added List creation for Super Admin Users
+
+- Added Site creation for Super Admin User
+
+- Added Database Admin Page for Table of Table management for Super Admin Users
+
+
+****************************************************************************
+*    FARA IS Web Console v2.5.a Release Notes.  Prior to April 16,2015.    *
+****************************************************************************
+
+Some features may only be partially implemented for proof of concept.
+
+Login:
+
+- Checks Username and password with users in the database
+
+Navigation:
+
+- HOME
+- Configuration
+   - Users
+- Business Intelligence
+- Database Administration
+- Forms
+- LOGOUT
+
+------------------------------------------------------------------------------
+
+Global Filters:
+
+- Begin Date
+- End Date
+   - Can be used to filter designated screens
+
+------------------------------------------------------------------------------
+
+List Configuration:
+
+- Add new list
+   - System Lists
+   - Locked Lists
+   - Unlocked LIsts
+- Can remove unlocked lists
+
+- Add Items to lists
+- Can remove list items
+
+- Available only through Super Admin Access
+
+------------------------------------------------------------------------------
+
+Sites Configuration:
+
+- View existing sites
+- Create new sites
+   - system Lists
+   - System Tables
+   - Super Admin
+
+- Must include valid email in order to login with generated password
+
+------------------------------------------------------------------------------
+
+User Configuration:
+
+- Update Display Name
+- Update Password
+
+------------------------------------------------------------------------------
+
+Home:
+
+- Notification Center / Not Fully Implemented
+   - Hidden for now
+
+------------------------------------------------------------------------------
+
+Configuration Screens:
+
+- Users
+   - View list of current users
+   - Add new users in bulk
+   - Can set users to inactive
+   - Can reset user passwords
+   - UserName's are generated from the email address
+
+- Can not view or edit Super Admin users
+   
+
+------------------------------------------------------------------------------
+
+Business Intelligence:
+
+- Cycles/Hour
+- Cycles/Day
+- % Moving
+- GPS Miles Traveled
+- First and Last Load Times
+- Top Status
+- Top Region
+
+- All can be filtered by global filters
+
+------------------------------------------------------------------------------
+
+Database Administration:
+
+- Accessed from Super Admin only
+- Used to configure Table of Tablestructure
+
+- Create New Virtual Table
+   - Add Tables
+   - Remove unlocked Tables
+
+- Table Structure
+   - Add columns and column types to unlocked virtual tables
+   - Remove unsaved columns
+   - Re-order the column ordinals
+   - Lock Tables
+      - Can not be undone
+
+- Table records
+   - Add records to Virtual Tables using form generator
+   - View Existing Records in grid
+   - Delete Selected Record
+   - Clear form to begin again
+
+------------------------------------------------------------------------------
+
+Forms:
+
+- Icon appears in status bar to open form search box
+
+- Create a new form from a preselected list of forms
+   - 500023
+   - Safety Checklist
+
+- Open up Saved forms
+   - Search using grid
+      - Form name
+      - Document Name
+      - Submitted By
+      - Subject (Person in question)
+      - Manager (of subject)
+      - Created Date
+      - Modified Date
+
+- Open up Submitted forms (locked)
+   - Search using grid
+      - Form name
+      - Document Name
+      - Submitted By
+      - Subject (Person in question)
+      - Manager (of subject)
+      - Created Date
+      - Modified Date
+
+- Fill out a new form
+   - Can reset
+   - Can Save from desktop (must be signed and locked from iPad)
+
+- View and update a saved form
+   - Can reset
+   - Can update
+   - Can save New (must be signed and locked from iPdad)
+
+- View Submitted Forms only
+
+------------------------------------------------------------------------------
+
+Logout:
+
+- Brings user back to login page
+- Clears cookies
+- Clears session data
+
+------------------------------------------------------------------------------

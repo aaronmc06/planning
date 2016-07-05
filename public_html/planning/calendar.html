@@ -1,0 +1,39 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING
+	File Name:			calendar.html
+=============================================================-->
+
+<!-- PAGE STYLES -->
+<link href="../planning/css/calendar.css" rel="stylesheet"/>
+
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript" src="../planning/js/calendar_js/script.js"></script>
+
+<div class="sectionTableContainer">
+	<table class="example-table" id="calendar-view">
+		<col width="40px"/>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<thead>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<div id="checklist-form" class="modal-box">
+		<header>
+			<h3 id="checklist-title"></h3><button id="checklist_print" class="btn btn-small btn-print lang-common print" onclick="FriendlyPrintView('checklist-body')"></button>
+		</header>
+		<div id="checklist-body" class="modal-body">
+			
+		</div>
+		<footer><a href="#" onclick="checklist_populate()" class="btn btn-submit btn-small lang-common accept"></a> <a href="#" id="checklist_close" class="btn btn-small js-modal-close lang-common cancel"></a></footer>
+	</div>	
+</div>

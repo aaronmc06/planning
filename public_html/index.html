@@ -1,0 +1,81 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH FT. JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/
+	File Name:			index.html
+=============================================================-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+	<link rel="icon" type="image/ico" sizes="16x16" href="./browser_icons/favicon-16x16.ico">
+	<link rel="manifest" href="./browser_icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	
+  	<title class="lang-index title"></title>
+  	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/login.css">
+  	<link rel="stylesheet" href="css/agreement.css">
+	
+	<script type="text/javascript" src="./required_files/scripts/jquery-2.0.2.min.js"></script>
+	
+	<!--USER SCRIPTS-->
+	<script type="text/javascript" src="./js/declarations.js"></script>
+	<script type="text/javascript" src="./menu/alerts_js/display_alert.js"></script>
+	<script type="text/javascript" src="./js/submit_login.js"></script>
+	<script type="text/javascript" src="./required_files/scripts/language_pack_spanish.js"></script>
+  </head>
+<body>
+	
+	<div class="hidden" id="alert_container" style="display: none; opacity: 0.0; position: fixed; z-index: 4000">
+	
+		<div id="alert_header"><span></span><div id="alert_cancel_btn">X</div></div>
+	
+		<div id="alert_message"><span></span></div>
+		
+		<button id="okay_alert_btn" class="lang-index okay"></button>
+	</div>
+	
+	<div class="hidden" id="confirm_container" style="display: none; opacity: 0.0; position: fixed; z-index: 4000">
+	
+		<div id="confirm_header"><span></span><div id="confirm_cancel_btn">X</div></div>
+	
+		<div id="confirm_message"><span></span></div>
+		
+		<div id="confirm_btn_container">
+			<button id="yes_confirm_btn" class="lang-common yes"></button>
+			<button id="no_confirm_btn" class="lang-common no"></button>
+		</div>
+	</div>
+
+	<div id="agreement_container" style="display: none; opacity: 0.0">
+		<div id="agreement_form_container"></div>
+	</div>
+
+	<div id="bg_container">
+		<div id="bgOverlay">
+			<div id="granite_logo"></div>
+			<form action="menu.html" id="login_info">
+			
+				<div style="padding: 60px; position: absolute; color:white; background: rgba(0,0,0,0.8); font-size:22px; width:500px; height:250px; left:-10px; top: -30px; text-align:center;">Login is currently available only from fara_fresnillo.</div>
+
+				<input disabled type="text" id="username" name="user_name" class="lang-index username">
+
+				<input disabled type="password" id="password" name="user_password" class="lang-index password">
+					
+				<input disabled id="login_button" type="submit" class="lang-index login">
+						
+			</form>
+			<div id="version" class="lang-index version"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+

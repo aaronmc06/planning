@@ -1,0 +1,145 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA
+	Directory:			FARA/CSS
+	File Name:			main.css
+	Created Date:		05/27/2015
+	Last Update On:		06/01/2015
+=============================================================*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #e5e5e5;
+  display: table;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+form {
+  width: 440px;
+  position: absolute;
+  left: calc(50% - 220px);
+  top: calc(50% - 190px);
+  padding: 10px 20px;
+  background: #384046;
+  border-radius: 8px;
+  -moz-box-shadow:  2px 5px 12px #888;
+  -webkit-box-shadow:  2px 5px 12px #888;
+  box-shadow: 2px 5px 12px #888;
+  color: #fff;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: 42px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background: #fff;
+  color: #8a97a0;
+  box-shadow: inset 0 0 5px #888;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+#login_button {
+	font-family: Helvetica, sans-serif;
+	padding: 19px 39px 18px 39px;
+	color: #fff;
+	background-color: #5084be;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+}
+
+#login_button:hover {
+	cursor: pointer;
+	background: #70a4de;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5084be;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+#version {
+	color: #fff;
+	font-size: 14px;
+	position: fixed;
+	bottom: 4px;
+	right: 8px;
+	text-shadow: -1px -1px 2px #000, 1px -1px 2px #000,	-1px 1px 2px #000, 1px 1px 2px #000;
+}

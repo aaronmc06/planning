@@ -1,0 +1,62 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING
+	File Name:			review.html
+=============================================================-->
+
+<!-- PAGE STYLES -->
+<link href="../planning/css/review.css" rel="stylesheet"/>
+
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript" src="../planning/js/review_js/script.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/load_dropdowns.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/jqxgrid_employees.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/jqxgrid_locations.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/jqxgrid_machines.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/load_wkflow_details.js"></script>
+<script type="text/javascript" src="../planning/js/review_js/update_wkflow_details.js"></script>
+
+<div class="sectionTableContainer">
+	<div class="reviewSubHeader">
+		<div class="reviewSelectContainer">
+			<div id="review_menu"></div>
+			<div class="selectDropDown"><span style="display:block" class="lang-menu-index area"></span> <select style="display:block" id="areaDD" class="ddFilter"><option value="0" class="lang-common selectOption"></option></select></div>
+			<div class="selectDropDown"><span style="display:block" class="lang-common process"></span><select style="display:block" id="processDD" class="ddFilter"><option value="0" class="lang-common selectOption"></option></select></div>
+			<div class="selectDropDown"><span style="display:block" class="lang-common method"></span><select style="display:block" id="methodDD" class="ddFilter"><option value="0" class="lang-common selectOption"></option></select></div>
+			<div class="selectDropDown"><span style="display:block" class="lang-common activity"></span><select style="display:block" id="activityDD" class="ddFilter"><option value="0" class="lang-common selectOption"></option></select></div>
+			<div class="selectDropDown"><span style="display:block" class="lang-common measure"></span><select style="display:block" id="measureDD" class="ddFilter"><option value="0" class="lang-common selectOption"></option></select></div>
+			<div id="apply_button" class="lang-common apply"></div>
+		</div>
+		
+		<div id="review_window" style="display: none;">
+			<div class="sectionBorder">
+				<div class="sectionHeader" id="review_window_header"><span class="lang-review reviewPlans"></span>
+					<div id="review_window_cancel_btn">X</div>
+				</div>
+				<div class="sectionSubHeader" style="text-align:center">
+					<div id="pending_filter_btn" class="reviewFilterBtn lang-common pending"></div>
+					<div id="rejected_filter_btn" class="reviewFilterBtn lang-common rejected"></div>
+					<div id="approved_filter_btn" class="reviewFilterBtn lang-common approved"></div>
+				</div>
+				<hr style="margin: 7px 0px">
+				<div id="wk_flow_detail_container" class="sectionForm"></div>
+				<hr style="margin: 7px 0px">
+				<div class="sectionSubFooter"></div>
+			</div>
+		</div>			
+	</div>
+	
+	<div class="sectionTables">
+		<div id="jqGrid1" class="tGrid">
+			<div class="tEmployees" id="employeesGrid"></div>
+		</div>
+		<div id="jqGrid2" class="tGrid">
+			<div class="tLocations" id="locationsGrid"></div>
+		</div>
+		<div id="jqGrid3" class="tGrid">
+			<div class="tMachines" id="machinesGrid"></div>
+		</div>
+	</div>
+</div>

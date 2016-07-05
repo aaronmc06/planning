@@ -1,0 +1,447 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA
+	Directory:			FARA_FRESNILLO/PLANNING/CSS
+	File Name:			calendar.css
+=============================================================*/
+
+/*========================================
+			MAIN CONTENT - STYLES
+========================================*/
+
+#content_container .sectionTableContainer .example-table {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 90%;
+	width: 100%;
+	overflow: auto;
+	min-width: 1510px;
+}
+#content_container .sectionTableContainer .main-header{
+	background-color: #434A54;
+	font-weight: 700;
+	color: white;
+	padding: 13px 23px;
+	text-align: center;
+	font-size: 16px;
+}
+#content_container .sectionTableContainer .day-header{
+	background-color: #656D78;
+	font-weight: normal;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+}
+#content_container .sectionTableContainer .time-header{
+	background-color: #BE5050;
+	font-weight: normal;
+	color: white;
+	padding: 20px 25px;
+	text-align: center;
+}
+#content_container .sectionTableContainer .example-table td {
+	background-color: #F5F7FA;
+	padding: 10px 10px;
+	width: 200px;
+	color: rgb(111, 111, 111);
+}
+#content_container .sectionTableContainer .example-table td:nth-child(odd){
+	background-color: #fff;
+}
+#content_container .sectionTableContainer .example-table td:nth-child(even){
+	background-color: #E5E5E5;
+}
+#content_container .sectionTableContainer .example-table col.hover {
+    background-color: #CCD1D9;
+}
+#content_container .sectionTableContainer .example-table tr:hover td {
+	background: #CCD1D9;
+	background: -webkit-gradient(linear, left top, left bottom, from(#CCD1D9), to(#CCD1D9));
+	background: -moz-linear-gradient(top,  #CCD1D9,  #CCD1D9);	
+}
+#content_container .sectionTableContainer .title-row {
+	font-weight: 600;
+	color: #BE5050;
+}
+#content_container .sectionTableContainer .plan-row-empty {
+	text-align: center !important;
+}
+#content_container .sectionTableContainer .title-row-empty {
+	font-weight: 600;
+	color: rgba(0,0,0,0.3);
+	font-size: 16px;
+}
+#content_container .sectionTableContainer .checklist-row {
+	display: inline-block;
+	padding-bottom: 5px;
+	margin: 2px;
+}
+#content_container .sectionTableContainer .checklist-row a:link{
+	color: #656D78;
+	text-decoration:none;
+}
+#content_container .sectionTableContainer .checklist-row a:visited{
+	color: #656D78;
+}
+#content_container .sectionTableContainer .checklist-row a:hover,
+#content_container .sectionTableContainer .qsection:hover .checklist-row a{
+	color: #4B4B4B;
+}
+/*#content_container .sectionTableContainer .checklist-ready a:link{
+	color: #26a65b;
+	text-decoration:none;
+}
+#content_container .sectionTableContainer .checklist-ready a:visited{
+	color: #26a65b;
+}
+#content_container .sectionTableContainer .checklist-ready a:hover{
+	color: #50BE50;
+}
+#content_container .sectionTableContainer .checklist-notready a:link{
+	color: #ED5565;
+	text-decoration:none;
+}
+#content_container .sectionTableContainer .checklist-notready a:visited{
+	color: #ED5565;
+}
+#content_container .sectionTableContainer .checklist-notready a:hover{
+	color: #DA4453;
+}*/
+#content_container .sectionTableContainer .checklist-cready {
+	background: #50BE50;
+	border: 1px solid #227622;
+	border-width: 1px 1px 2px;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	margin: -2px 2px;
+}
+ 
+#content_container .sectionTableContainer .checklist-cready:hover,
+#content_container .sectionTableContainer .qsection:hover .checklist-cready {
+    background: #70de70;
+}
+ 
+#content_container .sectionTableContainer .checklist-cnotready {
+	background: #BE5050;
+	border: 1px solid #6C1E1E;
+	border-width: 1px 1px 2px;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	margin: -2px 2px;
+}
+ 
+#content_container .sectionTableContainer .checklist-cnotready:hover, 
+#content_container .sectionTableContainer .qsection:hover .checklist-cnotready {
+    background: #DE7070;
+}
+
+#content_container .sectionTableContainer .generateLineupBtn {
+	color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    background: #5084b3;
+    border-radius: 4px;
+    border: 1px solid #366191;
+    border-width: 1px 1px 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px 12px;
+}
+
+#content_container .sectionTableContainer .generateLineupBtn:hover {
+	background: #70a4de;
+}
+
+#content_container .sectionTableContainer hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #BE5050;
+   border-bottom: 1px solid #CCD1D9;
+}
+
+/* Checklist */
+#content_container .sectionTableContainer .checklist-table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+#content_container .sectionTableContainer .checklist-table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+#content_container .sectionTableContainer .checklist-table a:active,
+#content_container .sectionTableContainer .checklist-table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+#content_container .sectionTableContainer .checklist-table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:18px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+	
+	width: 96%;
+}
+#content_container .sectionTableContainer .checklist-table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+#content_container .sectionTableContainer .checklist-table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+#content_container .sectionTableContainer .checklist-table tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+#content_container .sectionTableContainer .checklist-table tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+#content_container .sectionTableContainer .checklist-table tr {
+	text-align: center;
+	padding-left:20px;
+}
+#content_container .sectionTableContainer .checklist-table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+#content_container .sectionTableContainer .checklist-table td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+#content_container .sectionTableContainer .checklist-table tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+#content_container .sectionTableContainer .checklist-table tr:last-child td {
+	border-bottom:0;
+}
+#content_container .sectionTableContainer .checklist-table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+#content_container .sectionTableContainer .checklist-table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+#content_container .sectionTableContainer .checklist-table tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+#content_container .sectionTableContainer .btn-radio {
+	width: 2em;
+	height: 2em;
+}
+
+#content_container .sectionTableContainer .checklist-table .main-header {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #656D78;
+	border-bottom:1px solid #656D78;
+	
+	color: #fff;
+	text-shadow: 1px 1px 0px #888;
+	font-size: 20px;
+	background: #656D78;
+	background: -webkit-gradient(linear, left top, left bottom, from(#656D78), to(#656D78));
+	background: -moz-linear-gradient(top,  #656D78,  #656D78);
+}
+
+#content_container .sectionTableContainer .checklist-title{
+	
+}
+
+/* Modal */
+
+#content_container .sectionTableContainer .v-center {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+#content_container .sectionTableContainer .v-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: -10%;
+}
+
+#content_container .sectionTableContainer .btn {
+  font-size: 3vmin;
+  padding: 0.75em 1.5em;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  text-decoration: none;
+  display: inline;
+  border-radius: 4px;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+#content_container .sectionTableContainer .btn-submit{
+  background-color: #50BE50;
+  border: 1px solid #227622;
+  color: #fff;
+}
+
+#content_container .sectionTableContainer .btn:hover {
+  background-color: #ddd;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+#content_container .sectionTableContainer .btn-submit:hover{
+  background-color: #227622;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#content_container .sectionTableContainer .btn-small {
+  padding: .75em 1em;
+  font-size: 0.8em;
+}
+
+#content_container .sectionTableContainer .modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+
+@media (min-width: 32em) {
+	#content_container .sectionTableContainer .modal-box { width: 70%; z-index: 9000}
+}
+
+#content_container .sectionTableContainer .modal-box header,
+#content_container .sectionTableContainer .modal-box .modal-header {
+	padding: 1.25em 1.5em;
+	background-color: #222;
+	border-bottom: 1px solid #ddd;
+	color: #ddd;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	position: absolute;
+	height: 60px;
+	left:0;
+	top:0;
+	width: 100%;
+}
+
+#content_container .sectionTableContainer .modal-box header h3,
+#content_container .sectionTableContainer .modal-box header h4,
+#content_container .sectionTableContainer .modal-box .modal-header h3,
+#content_container .sectionTableContainer .modal-box .modal-header h4 { margin: 0; }
+
+#content_container .sectionTableContainer .modal-box .modal-body {
+	padding: 0em 0em;
+	width: 100%;
+    height: calc(100% - 115px);
+    position: absolute;
+    top: 60px;
+    overflow: auto;
+}
+
+#content_container .sectionTableContainer .modal-box footer,
+#content_container .sectionTableContainer .modal-box .modal-footer {
+	padding: 1em;
+	border-top: 1px solid #ddd;
+	background: rgba(0, 0, 0, 0.02);
+	text-align: right;
+	height:55px;
+	width:100%;
+	position: absolute;
+	left: 0;
+	bottom: 0; 
+}
+
+#content_container .sectionTableContainer .modal-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+#content_container .sectionTableContainer a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+
+#content_container .sectionTableContainer a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+#content_container .sectionTableContainer .btn-print{
+	position: absolute;
+  right: 15px;
+  top: 10px;
+}

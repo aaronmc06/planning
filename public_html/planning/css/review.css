@@ -1,0 +1,350 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING/CSS
+	File Name:			review.css
+=============================================================*/
+
+/*========================================
+			MAIN CONTENT - STYLES
+========================================*/
+
+#content_container .reviewSubHeader {
+	color: rgba(0,0,0,0.7);
+	background: linear-gradient(#ededed,#e2e2e2);
+	display: block;
+	border-radius: 4px 4px 0px 0px;
+	height: 60px;
+	padding: 2px;
+	border-bottom: 2px solid #d2d2d2;
+	position: relative;
+	text-align: right;
+}
+
+#content_container .reviewSubHeader #apply_button {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	background: #50be50;
+	border-radius: 4px;
+	border: 1px solid #227622;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	width: 122px;
+	display: inline-block;
+	padding: 2px 12px;
+	height: 28px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+
+#content_container .reviewSubHeader #apply_button:hover {
+	background: #70de70;
+	/*border: 1px solid #3bafda;*/
+}
+
+#content_container .reviewSubHeader .reviewSelectContainer {
+	width: 100%;
+	text-align: left;
+}
+
+#content_container .reviewSubHeader .selectDropDown {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	width: calc(20% - 40px);
+	margin-top: 4px;
+}
+
+#content_container .reviewSubHeader span {
+	margin-left: 4px;
+}
+
+#content_container .reviewSubHeader .ddFilter {
+	font-size: 16px;
+	padding: 2px;
+	width: calc(100% - 20px);
+	margin-right: 10px;
+}
+
+#content_container .sectionTables {
+	margin-top: 15px;
+}
+
+#content_container .sectionTables .tGrid {
+	margin-top: 4px;
+}
+
+#content_container .sectionTables .titleGrid {
+	background-color: #74848b; 
+	width: 100%; 
+	color: #fff; 
+	text-align: center; 
+	padding: 6px; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#content_container .sectionTables .emptyGrid {
+	background-color: #fff; 
+	width: 100%; 
+	color: #444; 
+	text-align: center; 
+	padding: 42px;
+}
+
+#content_container .reviewSubHeader #review_menu {
+	background: #5084b3 no-repeat center;
+	background-image: url("../images/plan_list.png");
+	background-size: contain;
+	border-radius: 4px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	cursor: pointer;
+	width: 40px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-top: 20px;
+}
+
+#content_container .reviewSubHeader #review_menu:hover {
+	background: #70a4de no-repeat center;
+	background-image: url("../images/plan_list.png");
+	background-size: contain;
+}
+
+#content_container .reviewSubHeader #review_window {
+	position: fixed;
+	top: 166px;
+	left: 16px;
+	background: #181818;
+	width: 360px;
+	border: 1px solid #181818;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 4px;
+	color: #ddd;
+	border-radius: 4px;
+	z-index: 1900;
+	height: calc(100% - 214px);
+}
+
+#content_container .reviewSubHeader #review_window #review_window_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 13px;
+	right: 13px;
+	background: #ccc;
+	cursor: pointer;
+}
+
+#content_container .reviewSubHeader #review_window #review_window_cancel_btn:hover {
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#content_container .reviewSubHeader #review_window .reviewFilterBtn {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    background: #a0a0a0;
+    border-radius: 4px;
+    border: 1px solid #5c5c5c;
+    border-width: 1px 1px 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px 12px;
+    height: 26px;
+	width: 194px;
+	display: inline-block;
+}
+
+#content_container .reviewSubHeader #review_window #pending_filter_btn.ison {
+    background: #E49114;
+	border-color: #774800;
+}
+
+#content_container .reviewSubHeader #review_window #rejected_filter_btn.ison {
+    background: #BE5050;
+	border-color: #6C1E1E;
+}
+
+#content_container .reviewSubHeader #review_window #approved_filter_btn.ison {
+    background: #50be50;
+	border-color: #227622;
+}
+
+#content_container .reviewSubHeader #review_window #pending_filter_btn.ison:hover {
+    background: #e4ab54;
+}
+
+#content_container .reviewSubHeader #review_window #rejected_filter_btn.ison:hover {
+    background: #DE7070;
+}
+
+#content_container .reviewSubHeader #review_window #approved_filter_btn.ison:hover {
+    background: #70de70;
+}
+
+#content_container .reviewSubHeader #review_window .reviewFilterBtn:hover {
+    background: #bebebe;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid rgba(0,0,0,0.7);
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .eachWkFlowContainer {
+	width: 100%;
+	text-align: center;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow textarea {
+	width: 100%;
+	height: 80px;
+	max-width: 100%;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .detailBtnsContainer {
+	display: block;
+	height: 26px;
+	position: relative;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .detailBtnsContainer div {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	border-width: 1px 1px 3px;
+	text-align: center;
+	cursor: pointer;
+	height: 24px;
+	position: absolute;
+	line-height: 16px;
+	padding: 2px 6px;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .detailCell {
+	cursor: pointer;	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .goToGanttBtn {
+	background: #5084b3;
+	border-color: #366191 !important;
+	left: 0px;
+	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .rejectPendingBtn {
+	background: #BE5050;
+	border-color: #6C1E1E !important;
+	right: 86px;
+	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .approvePendingBtn {
+	background: #50be50;
+	border-color: #227622 !important;
+	right: 0px
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .isHidden {
+	display: none !important;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .goToGanttBtn:hover {
+	background: #70a4de;
+	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .rejectPendingBtn:hover {
+	background: #DE7070;
+	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .wkFlowDetailsRow .approvePendingBtn:hover {
+	background: #70de70;
+	
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .eachWkFlowContainer:hover {
+	//background: #fff !important;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table th {
+	text-align: center;
+	background: #fff;
+	padding: 4px;
+	background: rgba(0,0,0,0.7);
+	color: #ededed;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table td {
+	text-align: center;
+	padding: 4px;
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .rowa_0 {
+	background: #d1d1d1;
+	border-top: 1px solid rgba(0,0,0,0.7);
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .rowb_0 {
+	background: #d1d1d1;
+	border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .rowa_1 {
+	background: #b7b7b7;
+	border-top: 1px solid rgba(0,0,0,0.7);
+}
+
+#content_container .reviewSubHeader #review_window #wk_flow_table .rowb_1 {
+	background: #b7b7b7;
+	border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+
+#content_container .reviewSubHeader #review_window .statusCircle {
+	width: 22px;
+	height: 22px;
+	border: 1px solid #fff;
+	border-width: 1px 1px 3px;
+	color: #fff;
+	border-radius: 50%;
+	margin-left: 22px;
+}
+
+#content_container .reviewSubHeader #review_window .approvedCircle {
+	background: #50be50;
+	border-color: #227622;
+}
+
+#content_container .reviewSubHeader #review_window .pendingCircle {
+	background: #E49114;
+	border-color: #774800;
+}
+
+#content_container .reviewSubHeader #review_window .rejectedCircle {
+	background: #BE5050;
+	border-color: #6C1E1E;
+}

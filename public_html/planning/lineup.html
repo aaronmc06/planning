@@ -1,0 +1,42 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING
+	File Name:			lineup.html
+=============================================================-->
+
+<!-- PAGE STYLES -->
+<link href="../planning/css/lineup.css" rel="stylesheet"/>
+
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript" src="../planning/js/lineup_js/generate_lineup_html.js"></script>
+<script type="text/javascript" src="../planning/js/lineup_js/load_dropdowns.js"></script>
+<script type="text/javascript" src="../planning/js/lineup_js/submit_lineup_config.js"></script>
+
+<div class="sectionTableContainer">
+	<div id="lineup_window" style="display: none;">
+		<div class="sectionBorder">
+			<div class="sectionHeader lang-prelineup plansForLineup" id="lineup_window_header">
+				<div id="lineup_window_cancel_btn">X</div>
+			</div>
+			<div class="sectionSubHeader" style="text-align:center">
+				<div>
+					<div class="lineupFieldContainers"><span class="lang-common date"></span><input id="plan_lineup_date_field" class="shortField lineupDate"></div>
+					<div class="lineupFieldContainers"><span class="lang-common shift"></span>
+						<select id="plan_lineup_shift_field" class="shortField">
+							<option value="1" class="lang-common first"></option>
+							<option value="2" class="lang-common second"></option>
+							<option value="3" class="lang-common third"></option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<hr style="margin: 7px 0px">
+			<div id="lineup_detail_container" class="sectionForm"></div>
+			<hr style="margin: 7px 0px">
+			<div class="sectionSubFooter"></div>
+		</div>
+	</div>
+	<div id="lineup_config_container"></div>
+</div>

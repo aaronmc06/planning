@@ -1,0 +1,112 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA
+	Directory:			FARA/MENU/CSS
+	File Name:			menu_styles.css
+	Created Date:		05/27/2015
+	Last Update On:		06/01/2015
+=============================================================*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: helvetica, sans-serif;
+}
+
+/*==================================================
+					GENERAL STYLES
+==================================================*/
+
+#menuLog {
+	font-size:1.4em;
+	margin:10px 20px 20px;
+}
+
+.hidden {
+	position:absolute;
+	top:0;
+	left:-9999px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.fg-button {
+	clear:left;
+	text-decoration:none !important;
+	cursor:pointer;
+	position: relative;
+	text-align: center;
+	zoom: 1;
+	width: 40px;
+	height: 40px;
+	background: none !important;	
+	border: none !important;
+}
+
+.fg_menu_container {
+	height: 100%;
+	position: fixed !important;
+	top: 0;
+	background: #000 !important;
+}
+.fg-menu-ipod {
+	z-index: 1000;
+}
+
+.fg-button .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+
+a.fg-button {
+	float:left;
+}
+
+button.fg-button {
+	width:auto;
+	overflow:visible;
+} /* removes extra button width in IE */
+
+.fg-button-icon-left {
+	/*padding-left: 2.1em;*/
+}
+
+.fg-button-icon-right {
+	/*padding-right: 2.1em;*/
+}
+
+.fg-button-icon-left .ui-icon {
+	right: auto;
+	left: .2em;
+	margin-left: 0;
+}
+
+.fg-button-icon-right .ui-icon {
+	left: auto;
+	right: .2em;
+	margin-left: 0;
+}
+
+.fg-button-icon-solo {
+	display:block;
+	width:8px;
+	text-indent: -9999px;
+}	 /* solo icon buttons must have block properties for the text-indent to work */	
+
+.fg-button.ui-state-loading .ui-icon {
+	background: url(../required/jqmenu/spinner_bar.gif) no-repeat 0 0;
+}
+
+.fg-menu-header a:hover, .fg-menu-current-crumb a:hover {
+	color: #384046 !important;
+	opacity: .4 !important;
+	
+}
+	
+/*==================================================*/

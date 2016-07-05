@@ -1,0 +1,302 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA
+	Directory:			FARA/CSS
+	File Name:			login.css
+	Created Date:		05/27/2015
+	Last Update On:		06/01/2015
+=============================================================*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #e5e5e5;
+  display: table;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bg_container {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url("../images/fara_bg_01.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#bgOverlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	padding: 57px 20px 20px 20px;
+}
+
+#lfms_logo {
+	position: absolute;
+	top: 100px;
+	height: 96px;
+	width: 300px;
+	margin-left: calc(50% - 150px);
+	margin-left: -moz-calc(50% - 150px);
+	margin-left: -webkit-calc(50% - 150px);
+	/*background: url("../images/lfms_logo.png") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+
+form {
+  width: 480px;
+  position: absolute;
+  left: calc(50% - 240px);
+  left: -moz-calc(50% - 240px);  
+  left: -webkit-calc(50% - 240px);
+  top: calc(50% - 140px);
+  top: -moz-calc(50% - 140px);
+  top: -webkit-calc(50% - 140px);
+  padding: 10px 20px;
+  color: #fff;
+}
+
+h1 {
+  margin: 0 0 40px 0;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+  font
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	background: rgba(255,255,255,0.1);
+	border: none;
+	font-size: 16px;
+	height: 42px;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background: #fff;
+	color: #2a2e30;
+	box-shadow: inset 0 0 5px #888;
+	margin-bottom: 16px;
+	border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 42px;
+}
+
+select:hover {
+	cursor: pointer;
+	color: #8a97a0;
+}
+
+#login_button {
+	font-family: Helvetica, sans-serif;
+	padding: 10px;
+	color: #FFF;
+	background-color: #5084be;
+	font-size: 16px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 150px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+#login_button:hover {
+	cursor: pointer;
+	background: #70a4de;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5084be;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+#version {
+	color: #fff;
+	font-size: 14px;
+	position: fixed;
+	bottom: 4px;
+	right: 8px;
+	text-shadow: -1px -1px 2px #000, 1px -1px 2px #000,	-1px 1px 2px #000, 1px 1px 2px #000;
+}
+#alert_container {
+	overflow: hidden;
+	height: 250px;
+	width: 400px;
+	top: calc(50% - 125px);
+	left: calc(50% - 200px);
+	background: #000;
+	border: 1px solid #000;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px;
+	color: #ddd;
+	border-radius: 4px;
+}
+
+#alert_container #alert_header {
+	background: #f0efea;
+	display: block;
+	padding: 8px;
+	text-align: center;
+	border-radius: 4px;
+	height: 34px;
+}
+
+#alert_container #alert_header span {
+	color: rgba(215,0,0,0.7);
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#alert_container #alert_message {	
+	background: #f0efea;
+	display: block;
+	padding: 8px;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 4px;
+	height: 128px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#alert_container #alert_message span {
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+#alert_container #alert_message span span {
+	color: rgba(215,0,0,0.7);
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+#alert_container #alert_header #alert_cancel_btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #eee;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	top: 13px;
+	right: 13px;
+	background: #ccc;
+}
+
+#alert_container #alert_header #alert_cancel_btn:hover {
+	cursor: pointer;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	background: #c5495b;
+}
+
+#alert_container #okay_alert_btn {
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	margin-left: -moz-calc(50% - 100px);
+	margin-left: -webkit-calc(50% - 100px);
+	height: 50px;
+	margin-bottom: 8px;
+	background: #5084be;
+	font-size: 18px;
+	color: #f0efea;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	border: 1px solid #366191;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+}
+
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 100%;
+		left: 0px;
+    }
+}

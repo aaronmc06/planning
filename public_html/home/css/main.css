@@ -1,0 +1,28 @@
+/*============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			AARON MCCOLOUGH
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/HOME/CSS
+	File Name:			main.css
+=============================================================*/
+
+#bgContainer {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url("../../images/fara_bg_04.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#bgOverlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	padding: 37px 0px 0px 0px;
+}

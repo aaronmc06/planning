@@ -1,0 +1,51 @@
+<!--============================================================
+	Property of:		MISOM TECHNOLOGIES
+	Developer:			JORGE MURILLO
+	Application Name:	FARA_FRESNILLO
+	Directory:			FARA_FRESNILLO/PLANNING
+	File Name:			prelineup_mobile.html
+=============================================================-->
+
+<!-- PAGE STYLES -->
+<link rel="stylesheet" href="../required_files/styles/materialize.min.css" type="text/css" />
+<link rel="stylesheet" href="../required_files/datetimepicker/jquery.datetimepicker.css" type="text/css" />
+<link rel="stylesheet" href="../required_files/jqwidgets/styles/jqx.base.css" type="text/css" />
+<link rel="stylesheet" href="./css/prelineup_mobile.css" type="text/css" />
+
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript" src="../required_files/scripts/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="../required_files/scripts/materialize.min.js"></script>
+<script type="text/javascript" src="../required_files/scripts/moment.js"></script>
+<script type="text/javascript" src="../required_files/scripts/language_pack_spanish.js"></script>
+<script type="text/javascript" src="../required_files/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxdata.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxdraw.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxgauge.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxslider.js"></script>
+<script type="text/javascript" src="../required_files/jqwidgets/jqxbuttons.js"></script>
+<script type="text/javascript" src="./js/prelineup_mobile_js/declarations.js"></script>
+<script type="text/javascript" src="./js/prelineup_mobile_js/script.js"></script>
+
+<div id="content_container">
+	<div class="hoverable navbar-fixed">
+		<ul id="areas_dropdown" class="dropdown-content">
+		</ul>
+		<ul style="min-width:140px" id="task_dropdown" class="dropdown-content">
+			<li><a onclick="SwitchTask('planning')">Planeacion</a></li>
+			<li><a onclick="SwitchTask('lineup')">Pueble</a></li>
+		</ul>
+		<nav>
+			<div class="nav-wrapper grey darken-4">
+				<a class="brand-logo left" id="lineup_card_header">PLANEACION</a>				
+				<ul id="lineup_cl_links" class="right">
+					<li id="list_item_task"><a id="task_container_ddl" class="dropdown_button" style="font-size: 1.4rem" href=#" data-activates="task_dropdown">System</a></li>
+					<li id="list_item_areas"><a id="areas_container_ddl" class="dropdown_button" style="font-size: 1.4rem" href=#" data-activates="areas_dropdown">Areas</a></li>
+					<li id="list_item_back" style="display: none"><a style="font-size: 1.4rem" href="#" onclick="GoToSwitch()">Back</a></li>
+					<li id="list_item_exit"><a style="font-size: 1.4rem" href=#" onclick="ExitPlanningSystem()">Exit</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="generated_list" style="padding: 10px"></div>
+</div>
